@@ -9,6 +9,7 @@
       <dd>
         <a href="/movies/<%= @character.movie_id %>">
           <%= Movie.find_by(:id => @character.movie_id).title %>
+          <%= @character.movies.title %>
         </a>
       </dd>
 
